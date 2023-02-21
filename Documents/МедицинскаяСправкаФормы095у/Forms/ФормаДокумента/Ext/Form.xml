@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ДанныеПациента" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные пациента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные пациента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ДанныеПациентаРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Пациент" id="16">
+					<DataPath>Объект.Пациент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПациентКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПациентРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ПациентДиагноз" id="24">
+					<DataPath>Объект.Пациент.Диагноз</DataPath>
+					<ContextMenu name="ПациентДиагнозКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПациентДиагнозРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="ПациентДатаРождения" id="27">
+					<DataPath>Объект.Пациент.ДатаРождения</DataPath>
+					<ContextMenu name="ПациентДатаРожденияКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ПациентДатаРожденияРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КемВыдана" id="44">
+			<DataPath>Объект.КемВыдана</DataPath>
+			<ContextMenu name="КемВыданаКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КемВыданаРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="ДатаВыдачиСправки" id="7">
+			<DataPath>Объект.ДатаВыдачиСправки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаВыдачиСправкиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаВыдачиСправкиРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="КомуВыдана" id="10">
+			<DataPath>Объект.КомуВыдана</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомуВыданаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КомуВыданаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="ЛечущийВрач" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лечущий врач</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лечущий врач</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ЛечущийВрачРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="Врач" id="41">
+					<DataPath>Объект.Пациент.ЛечущийВрач</DataPath>
+					<ContextMenu name="ВрачКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВрачРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПациентЛечущийВрачДолжность" id="35">
+					<DataPath>Объект.Пациент.ЛечущийВрач.Должность</DataPath>
+					<ContextMenu name="ПациентЛечущийВрачДолжностьКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПациентЛечущийВрачДолжностьРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПациентЛечущийВрачСпециальность" id="38">
+					<DataPath>Объект.Пациент.ЛечущийВрач.Специальность</DataPath>
+					<ContextMenu name="ПациентЛечущийВрачСпециальностьКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПациентЛечущийВрачСпециальностьРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Заключение" id="21">
+			<DataPath>Объект.Заключение</DataPath>
+			<ContextMenu name="ЗаключениеКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ЗаключениеРасширеннаяПодсказка" id="23"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.МедицинскаяСправкаФормы095у</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

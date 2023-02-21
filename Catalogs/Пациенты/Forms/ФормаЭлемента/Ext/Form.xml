@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаБолезни" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Болезни</CommandName>
+				<ExtendedTooltip name="ФормаБолезниРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ЛечущийВрач" id="7">
+			<DataPath>Объект.ЛечущийВрач</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛечущийВрачКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЛечущийВрачРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Запись" id="13">
+			<DataPath>1/0:304108d2-5199-4f00-a55c-fdbf15023e1b</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗаписьКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЗаписьРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДатаРождения" id="16">
+			<DataPath>Объект.ДатаРождения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Диагноз" id="19">
+			<DataPath>Объект.Диагноз</DataPath>
+			<ContextMenu name="ДиагнозКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДиагнозРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<UsualGroup name="АнализКрови" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ крови</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ крови</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="АнализКровиРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="АнализКрови1" id="93">
+					<DataPath>Объект.АнализКрови</DataPath>
+					<ContextMenu name="АнализКрови1КонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="АнализКрови1РасширеннаяПодсказка" id="95"/>
+				</InputField>
+				<UsualGroup name="Группа2" id="74">
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<InputField name="АнализКровиГемоглобин" id="24">
+							<DataPath>Объект.АнализКрови.Гемоглобин</DataPath>
+							<ContextMenu name="АнализКровиГемоглобинКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="АнализКровиГемоглобинРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="АнализКровиГематоркрит" id="27">
+							<DataPath>Объект.АнализКрови.Гематоркрит</DataPath>
+							<ContextMenu name="АнализКровиГематоркритКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="АнализКровиГематоркритРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="АнализКровиТромбоциты" id="30">
+							<DataPath>Объект.АнализКрови.Тромбоциты</DataPath>
+							<ContextMenu name="АнализКровиТромбоцитыКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="АнализКровиТромбоцитыРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="АнализКровиУровеньСахара" id="36">
+							<DataPath>Объект.АнализКрови.УровеньСахара</DataPath>
+							<ContextMenu name="АнализКровиУровеньСахараКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="АнализКровиУровеньСахараРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="АнализКровиТромбоцитокрит" id="33">
+							<DataPath>Объект.АнализКрови.Тромбоцитокрит</DataPath>
+							<ContextMenu name="АнализКровиТромбоцитокритКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="АнализКровиТромбоцитокритРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="76">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<InputField name="АнализКровиГемоглобинПациента" id="78">
+							<DataPath>Объект.АнализКрови.ГемоглобинПациента</DataPath>
+							<ContextMenu name="АнализКровиГемоглобинПациентаКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="АнализКровиГемоглобинПациентаРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<InputField name="АнализКровиГематоркритПациента" id="81">
+							<DataPath>Объект.АнализКрови.ГематоркритПациента</DataPath>
+							<ContextMenu name="АнализКровиГематоркритПациентаКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="АнализКровиГематоркритПациентаРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="АнализКровиТромбоцитыПациента" id="84">
+							<DataPath>Объект.АнализКрови.ТромбоцитыПациента</DataPath>
+							<ContextMenu name="АнализКровиТромбоцитыПациентаКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="АнализКровиТромбоцитыПациентаРасширеннаяПодсказка" id="86"/>
+						</InputField>
+						<InputField name="АнализКровиТромбоцитокритПациента" id="87">
+							<DataPath>Объект.АнализКрови.ТромбоцитокритПациента</DataPath>
+							<ContextMenu name="АнализКровиТромбоцитокритПациентаКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="АнализКровиТромбоцитокритПациентаРасширеннаяПодсказка" id="89"/>
+						</InputField>
+						<InputField name="АнализКровиУровеньСахараПациента" id="90">
+							<DataPath>Объект.АнализКрови.УровеньСахараПациента</DataPath>
+							<ContextMenu name="АнализКровиУровеньСахараПациентаКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="АнализКровиУровеньСахараПациентаРасширеннаяПодсказка" id="92"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ДавлениеНорма" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Давление норма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Давление норма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ДавлениеНормаРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="58">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<InputField name="Давление1" id="55">
+							<DataPath>Объект.Давление</DataPath>
+							<ContextMenu name="Давление1КонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="Давление1РасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="ДавлениеПониженноеДавлениеНоромальное" id="43">
+							<DataPath>Объект.Давление.ПониженноеДавлениеНормальное</DataPath>
+							<ContextMenu name="ДавлениеПониженноеДавлениеНоромальноеКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ДавлениеПониженноеДавлениеНоромальноеРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ДавлениеПовышенноеДавлениеНормальное" id="46">
+							<DataPath>Объект.Давление.ПовышенноеДавлениеНормальное</DataPath>
+							<ContextMenu name="ДавлениеПовышенноеДавлениеНормальноеКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ДавлениеПовышенноеДавлениеНормальноеРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="ДавлениеПовышенноеДавлениеНормальноеГипертония" id="49">
+							<DataPath>Объект.Давление.ПовышенноеДавлениеГипертония</DataPath>
+							<ContextMenu name="ДавлениеПовышенноеДавлениеНормальноеГипертонияКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ДавлениеПовышенноеДавлениеНормальноеГипертонияРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<InputField name="ДавлениеПониженноеДавлениеНоромальноеГипотония" id="52">
+							<DataPath>Объект.Давление.ПониженноеДавлениеГипотония</DataPath>
+							<ContextMenu name="ДавлениеПониженноеДавлениеНоромальноеГипотонияКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ДавлениеПониженноеДавлениеНоромальноеГипотонияРасширеннаяПодсказка" id="54"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ДавлениеПациента" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Давление пациента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Давление пациента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ДавлениеПациентаРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<InputField name="ДавлениеПониженноеДавлениеНормальноеПациента" id="62">
+							<DataPath>Объект.Давление.ПониженноеДавлениеНормальноеПациента</DataPath>
+							<ContextMenu name="ДавлениеПониженноеДавлениеНормальноеПациентаКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДавлениеПониженноеДавлениеНормальноеПациентаРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="ДавлениеПовышенноеДавлениеНормальноеПациента" id="65">
+							<DataPath>Объект.Давление.ПовышенноеДавлениеНормальноеПациента</DataPath>
+							<ContextMenu name="ДавлениеПовышенноеДавлениеНормальноеПациентаКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДавлениеПовышенноеДавлениеНормальноеПациентаРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ДавлениеПовышенноеДавлениеГипертонияПациента" id="68">
+							<DataPath>Объект.Давление.ПовышенноеДавлениеГипертонияПациента</DataPath>
+							<ContextMenu name="ДавлениеПовышенноеДавлениеГипертонияПациентаКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ДавлениеПовышенноеДавлениеГипертонияПациентаРасширеннаяПодсказка" id="70"/>
+						</InputField>
+						<InputField name="ДавлениеПониженноеДавлениеГипотонияПациента" id="71">
+							<DataPath>Объект.Давление.ПониженноеДавлениеГипотонияПациента</DataPath>
+							<ContextMenu name="ДавлениеПониженноеДавлениеГипотонияПациентаКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ДавлениеПониженноеДавлениеГипотонияПациентаРасширеннаяПодсказка" id="73"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Пациенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Болезни" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Болезни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Болезни</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Болезни</Action>
+		</Command>
+	</Commands>
+</Form>
